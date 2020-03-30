@@ -1,10 +1,12 @@
 const xlsx = require('xlsx');
-const getEpisode = require('./getEpisode');
+const getEpisode = require('./utils/getEpisode');
 
 const path = 'files/Report2019.xlsx';
 
 const sheetNameToRead = 'TestSheet';
 
+//This code was used more like for testing and creating templates for tasks
+// More specific implementation is in writeToExcel.js and findOccurrences.js
 
 const readFile = async (path, sheetName) => {
 	const wb = xlsx.readFile(path);

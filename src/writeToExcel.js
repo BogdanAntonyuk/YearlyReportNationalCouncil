@@ -1,5 +1,5 @@
 const xlsx = require('xlsx');
-const getEpisodes = require('./getAllEpisodes');
+const getEpisodes = require('./utils/getAllEpisodes');
 
 const path = 'files/Report2019.xlsx';
 
